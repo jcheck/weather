@@ -5,7 +5,9 @@ $(function() {
     // Put your code here to change the "markup" variable.
     // Don't change any other code in this file. You will be sad.
 
-    var markup = {latitude: "42.056459", longitude: "-87.675267", timezone: "America/Chicago", offset: "-6"};
+    var markup = "The current weather is " + data.daily.summary
+
+    // define the variable to go pull the objects from the data object, use week 4 survival code
 
     // End of your code
 
