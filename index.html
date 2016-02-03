@@ -4,7 +4,7 @@
   <title>Weather Report</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.css">
+  <link rel="stylesheet" href="http://bootswatch.com/readable/bootstrap.min.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="weather.js"></script>
@@ -60,10 +60,13 @@
 
    </div>
 
-    <!-- Create a table that has the 5-day forecast and link to map> -->
-    <!-- Need to show current weather conditions and 3-day daily forecast-->
-    <!--Perhaps show the hourly forecast and icons with sun/clouds, also moon phase, Wanning or Waxing Gibbous-->
-    <!--Use div class container.fluid in order to make the layout nice with padding and borders, use bootstrap themes to make layout better-->
+    <div class="row">
+      <div class="col-12" style=margin:50px>
+       <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="80%" src="http://forecast.io/embed/#lat=42.056459&lon=-87.675267&name=Chicago, IL"> </iframe>
+     </div>
+    </div>
+
+    <!-- I found this embedded weather bug from playing around on the forecast io site.  It's pretty cool and I hope to use it again-->
 
   </div>
   <!--Close container.fluid-->
