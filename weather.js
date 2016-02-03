@@ -5,9 +5,9 @@ $(function() {
     // Put your code here to change the "markup" variable.
     // Don't change any other code in this file. You will be sad.
 
-    var markup = "The current weather is " + data.daily.summary
+    var markup = data.currently.summary + " with " + data.currently.icon + " skies. The current temperature is " + data.currently.temperature + " degrees with visibility up to " + data.currently.visibility + " mi " ;
 
-    // define the variable to go pull the objects from the data object, use week 4 survival code
+    var markup = data.daily.data[0].summary + " The high will be " + data.daily.data[0].temperatureMax + " degrees and the low will be " + data.daily.data[0].temperatureMin + " degrees.  Winds of up to " + data.daily.data[0].windSpeed + " mph gusts and visibility of up to " + data.daily.data[0].visibility + " mi " ;
 
     // End of your code
 
